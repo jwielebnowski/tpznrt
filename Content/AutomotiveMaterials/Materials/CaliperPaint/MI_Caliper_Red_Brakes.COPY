@@ -1,0 +1,18 @@
+Begin Object Class=MaterialInstanceConstant Name="MI_Caliper_Red_Brakes"
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   ParameterStateId=66F3E30F4EA88EEEE10C03A438A130EE
+   Parent=Material'/Game/AutomotiveMaterials/Materials/CaliperPaint/M_Caliper_Flake.M_Caliper_Flake'
+   bHasStaticPermutationResource=True
+   ScalarParameterValues(0)=(ParameterName="Flake Scale",ParameterValue=1.200000,ExpressionGUID=875F72B049AFABD14474A8924287876D)
+   ScalarParameterValues(1)=(ParameterName="Normal Strength",ParameterValue=0.532110,ExpressionGUID=74C842C14D45EB7705DAB281054CE8E3)
+   ScalarParameterValues(2)=(ParameterName="RefractionDepthBias")
+   VectorParameterValues(0)=(ParameterName="Base Paint Color",ParameterValue=(R=0.520000,G=0.011728,B=0.000000,A=1.000000),ExpressionGUID=14EB14B7454C3BD5B35C8697879F2E98)
+   VectorParameterValues(1)=(ParameterName="Reflective Flake Color",ParameterValue=(R=0.904661,G=0.000000,B=0.000000,A=1.000000),ExpressionGUID=3E3B3CE4404FE26BDC2DDBA2E3C8134D)
+   ReferencedTextureGuids(0)=51F24FAE4BA32E72F95A6E9EBC376609
+   ReferencedTextureGuids(1)=799873084BBC3AEFDC0D42B2269E4416
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'
+   LightingGuid=FD1CD311488D5A5FCA9525A1A646BDCF
+End Object
