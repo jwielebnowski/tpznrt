@@ -1,0 +1,107 @@
+simple	13-Feb-2020 15:07:27	Build PureWeb.io - Unreal project build - Linux (reality-build1) - Windows #219 (PUR-ULPBP-JOB1-219) started building on agent reality-build1.calgaryscientific.local
+simple	13-Feb-2020 15:07:27	Build working directory is C:\bamboo-agent-home\xml-data\build-dir\PUR-ULPBP-JOB1
+simple	13-Feb-2020 15:07:27	Executing build PureWeb.io - Unreal project build - Linux (reality-build1) - Windows #219 (PUR-ULPBP-JOB1-219)
+simple	13-Feb-2020 15:07:27	Starting task 'Checkout Default Repository' of type 'com.atlassian.bamboo.plugins.vcs:task.vcs.checkout'
+simple	13-Feb-2020 15:07:27	Build always requires a clean checkout
+simple	13-Feb-2020 15:07:27	Cleaning build directory 'C:\bamboo-agent-home\xml-data\build-dir\PUR-ULPBP-JOB1'
+simple	13-Feb-2020 15:07:28	Updating source code to revision: 79aa67d019537c3dc2f9cf3fdc9516fa7c9cddd0
+simple	13-Feb-2020 15:07:28	Creating local git repository in 'C:\bamboo-agent-home\xml-data\build-dir\PUR-ULPBP-JOB1\.git'.
+simple	13-Feb-2020 15:07:28	Initialized empty Git repository in C:/bamboo-agent-home/xml-data/build-dir/PUR-ULPBP-JOB1/.git/
+simple	13-Feb-2020 15:07:29	Fetching 'refs/heads/master' from 'git@github.com:calgaryscientific/unreal.git'.
+simple	13-Feb-2020 15:07:29	Warning: Permanently added '[127.0.0.1]:50268' (RSA) to the list of known hosts.
+simple	13-Feb-2020 15:07:52	From ssh://127.0.0.1:50268/calgaryscientific/unreal
+simple	13-Feb-2020 15:07:52	 * [new branch]      master     -> master
+simple	13-Feb-2020 15:07:52	 * [new tag]         1.0.0                -> 1.0.0
+simple	13-Feb-2020 15:07:52	 * [new tag]         1.1.0                -> 1.1.0
+simple	13-Feb-2020 15:07:52	 * [new tag]         UE4.15_END_SUPPORT   -> UE4.15_END_SUPPORT
+simple	13-Feb-2020 15:07:52	 * [new tag]         UE4.16_BEGIN_SUPPORT -> UE4.16_BEGIN_SUPPORT
+simple	13-Feb-2020 15:07:52	 * [new tag]         UE4.16_END_SUPPORT   -> UE4.16_END_SUPPORT
+simple	13-Feb-2020 15:07:52	 * [new tag]         UE4.17_BEGIN_SUPPORT -> UE4.17_BEGIN_SUPPORT
+simple	13-Feb-2020 15:07:52	 * [new tag]         UE4.18_BEGIN_SUPPORT -> UE4.18_BEGIN_SUPPORT
+simple	13-Feb-2020 15:07:52	 * [new tag]         UE4.19_BEGIN_SUPPORT -> UE4.19_BEGIN_SUPPORT
+simple	13-Feb-2020 15:07:52	 * [new tag]         UE4.21_END_SUPPORT   -> UE4.21_END_SUPPORT
+simple	13-Feb-2020 15:07:52	 * [new tag]         UE4.22_BEGIN_SUPPORT -> UE4.22_BEGIN_SUPPORT
+simple	13-Feb-2020 15:07:52	 * [new tag]         UE4.22_END_SUPPORT   -> UE4.22_END_SUPPORT
+simple	13-Feb-2020 15:07:52	 * [new tag]         UE4.23_BEGIN_SUPPORT -> UE4.23_BEGIN_SUPPORT
+simple	13-Feb-2020 15:07:52	 * [new tag]         UE4.24_BEGIN_SUPPORT -> UE4.24_BEGIN_SUPPORT
+simple	13-Feb-2020 15:07:52	Checking out revision 79aa67d019537c3dc2f9cf3fdc9516fa7c9cddd0.
+simple	13-Feb-2020 15:07:55	Already on 'master'
+simple	13-Feb-2020 15:07:55	Updated source code to revision: 79aa67d019537c3dc2f9cf3fdc9516fa7c9cddd0
+simple	13-Feb-2020 15:07:55	Finished task 'Checkout Default Repository' with result: Success
+simple	13-Feb-2020 15:07:55	Running pre-build action: Clover Grails PreBuild Action
+simple	13-Feb-2020 15:07:55	Running pre-build action: VCS Version Collector
+simple	13-Feb-2020 15:07:55	Starting task 'C++ libs' of type 'com.atlassian.bamboo.plugins.bamboo-artifact-downloader-plugin:artifactdownloadertask'
+simple	13-Feb-2020 15:07:55	Preparing to download plan result P5-SDKC-178 artifact: Shared artifact: [Windows C++ Libs Folder], pattern: [**/*.*] anchored at: [src/build/stage/sdk/Libs]
+simple	13-Feb-2020 15:08:38	Artifact [Windows C++ Libs Folder] downloaded successfully in 43s to: /src\pureweb\build\stage\sdk\Libs/
+simple	13-Feb-2020 15:08:38	Finished task 'C++ libs' with result: Success
+simple	13-Feb-2020 15:08:38	Starting task 'Linux C++ libs' of type 'com.atlassian.bamboo.plugins.bamboo-artifact-downloader-plugin:artifactdownloadertask'
+simple	13-Feb-2020 15:08:38	Preparing to download plan result P5-SCC-44 artifact: Shared artifact: [Libs Folder (Redhat)], pattern: [**/*.*] anchored at: [src/build/stage/sdk/Libs]
+simple	13-Feb-2020 15:09:35	Artifact [Libs Folder (Redhat)] downloaded successfully in 56s to: /src\pureweb\build\stage\sdk\Libs/
+simple	13-Feb-2020 15:09:35	Finished task 'Linux C++ libs' with result: Success
+command	13-Feb-2020 15:09:35	Substituting variable: ${bamboo.capability.VS2017ENV} with C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat
+command	13-Feb-2020 15:09:35	Substituting variable: ${bamboo.capability.LINUX_MULTIARCH_DIR} with F:\UnrealToolchains
+command	13-Feb-2020 15:09:35	Substituting variable: ${bamboo.capability.ProjectsDir} with F:\Projects
+command	13-Feb-2020 15:09:35	Substituting variable: ${bamboo.capability.ProjectsNetworkDrive} with Z:\Projects
+command	13-Feb-2020 15:09:35	Substituting variable: ${bamboo.capability.UNREALSDK_LINUX} with F:\UnrealEngines
+command	13-Feb-2020 15:09:35	Substituting variable: ${bamboo.capability.UNREALSDK_LINUX} with F:\UnrealEngines
+command	13-Feb-2020 15:09:35	Substituting variable: ${bamboo.capability.CSI_LIB} with C:\Libraries\win
+command	13-Feb-2020 15:09:35	Substituting variable: ${bamboo.ccs_buildartifacts_access_key} with AKIAIY7DCPNO6BRUQBZQ
+command	13-Feb-2020 15:09:35	Substituting variable: ${bamboo.ccs_buildartifacts_secret_key} with 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
+simple	13-Feb-2020 15:09:35	Starting task 'Build unreal' of type 'com.atlassian.bamboo.plugins.scripttask:task.builder.script'
+command	13-Feb-2020 15:09:35	Beginning to execute external process for build 'PureWeb.io - Unreal project build - Linux (reality-build1) - Windows #219 (PUR-ULPBP-JOB1-219)'\n ... running command line: \nBambooBuild-Linux.bat\n ... in: C:\bamboo-agent-home\xml-data\build-dir\PUR-ULPBP-JOB1\n ... using extra environment variables: \nbamboo_planRepository_1_branch=master\nbamboo_repository_236617755_git_username=csibuilder\nbamboo_unreal_fps=\nbamboo_capability_CSI_LIB=C:\Libraries\win\nbamboo_ccs_buildartifacts_access_key=AKIAIY7DCPNO6BRUQBZQ\nbamboo_repository_revision_number=79aa67d019537c3dc2f9cf3fdc9516fa7c9cddd0\nbamboo_repository_236617755_name=Unreal projects build and upload\nbamboo_build_lighting=false\nAWS_SECRET_ACCESS_KEY=gbFO+nPVFcZC66g4cdCDc7Fn2zlCmIEM3fsMaf1x\nbamboo_resultsUrl=http://bamboo.calgaryscientific.local:8085/browse/PUR-ULPBP-JOB1-219\nbamboo_capability_system_builder_msbuild_MSBuild_v4_0__32bit_=C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe\nUNREALSDK=F:\UnrealEngines\nbamboo_build_working_directory=C:\bamboo-agent-home\xml-data\build-dir\PUR-ULPBP-JOB1\nbamboo_planRepository_1_name=Unreal projects build and upload\nbamboo_buildKey=PUR-ULPBP-JOB1\nbamboo_repository_236617755_git_branch=master\nLINUX_MULTIARCH_DIR=F:\UnrealToolchains\nPLATFORM=win32\nbamboo_capability_UNREALSDK_WINDOWS=C:\Program Files\Epic Games\nbamboo_shortPlanName=Unreal project build - Linux (reality-build1)\nUELINUXSDK=F:\UnrealEngines\nbamboo_capability_system_builder_msbuild_MSBuild_v3_5__64bit_=C:\Windows\Microsoft.NET\Framework64\v3.5\MSBuild.exe\nbamboo_planRepository_name=Unreal projects build and upload\nbamboo_buildNumber=219\nDEFAULT_OUTPUT_FORMAT=json\nbamboo_capability_system_jdk_JDK_1_8_0_231__JRE_=C:\Program Files\Java\jre1.8.0_231\nbamboo_shortJobName=Windows\nbamboo_buildResultsUrl=http://bamboo.calgaryscientific.local:8085/browse/PUR-ULPBP-JOB1-219\nbamboo_capability_system_builder_msbuild_MSBuild_v2_0__64bit_=C:\Windows\Microsoft.NET\Framework64\v2.0.50727\MSBuild.exe\nbamboo_planRepository_repositoryUrl=git@github.com:calgaryscientific/unreal.git\nbamboo_agentId=234258434\nVS2017ENV=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat\nbamboo_planName=PureWeb.io - Unreal project build - Linux (reality-build1)\nbamboo_shortPlanKey=ULPBP\nbamboo_repository_236617755_branch_name=master\nbamboo_shortJobKey=JOB1\nbamboo_planRepository_revision=79aa67d019537c3dc2f9cf3fdc9516fa7c9cddd0\nbamboo_repository_previous_revision_number=5d602d1aa256510e3fe9cb9fec75d8d83782427a\nbamboo_buildTimeStamp=2020-02-13T14:27:21.036-07:00\nbamboo_planRepository_previousRevision=5d602d1aa256510e3fe9cb9fec75d8d83782427a\nDEFAULT_REGION_NAME=us-east-1\nbamboo_repository_git_branch=master\nbamboo_buildResultKey=PUR-ULPBP-JOB1-219\nbamboo_repository_branch_name=master\nbamboo_buildPlanName=PureWeb.io - Unreal project build - Linux (reality-build1) - Windows\nbamboo_capability_reality_build1=true\nbamboo_planRepository_1_revision=79aa67d019537c3dc2f9cf3fdc9516fa7c9cddd0\nbamboo_capability_system_builder_msbuild_MSBuild_v2_0__32bit_=C:\Windows\Microsoft.NET\Framework\v2.0.50727\MSBuild.exe\nbamboo_unreal_configurations=\nbamboo_repository_name=Unreal projects build and upload\nProjectsNetworkDrive=Z:\Projects\nbamboo_s3_regions=us-west-2\nbamboo_capability_system_builder_msbuild_MSBuild_v3_5__32bit_=C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe\nbamboo_dependenciesDisabled=false\nbamboo_demo_build=true\nbamboo_capability_ProjectsNetworkDrive=Z:\Projects\nbamboo_ccs_buildartifacts_secret_key=gbFO+nPVFcZC66g4cdCDc7Fn2zlCmIEM3fsMaf1x\nbamboo_planRepository_branch=master\nAWS_ACCESS_KEY_ID=AKIAIY7DCPNO6BRUQBZQ\nbamboo_agentWorkingDirectory=C:\bamboo-agent-home\xml-data\build-dir\nbamboo_capability_system_git_executable=C:\Program Files\Git\cmd\git.exe\nbamboo_repository_git_username=csibuilder\nbamboo_capability_VS2017ENV=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat\nbamboo_planRepository_1_previousRevision=5d602d1aa256510e3fe9cb9fec75d8d83782427a\nbamboo_build_type=Shipping\nbamboo_capability_system_jdk_JDK_1_8_0_201__JRE_=C:\Program Files\Java\jre1.8.0_201\nbamboo_planRepository_1_type=git\nbamboo_planRepository_branchName=master\nbamboo_mouse_defaults=\nbamboo_unreal_projects=rotor_home\nProjectsDir=F:\Projects\nbamboo_repository_236617755_previous_revision_number=5d602d1aa256510e3fe9cb9fec75d8d83782427a\nbamboo_capability_system_jdk_JDK=C:\Program Files\Java\jre1.8.0_201\nbamboo_repository_236617755_revision_number=79aa67d019537c3dc2f9cf3fdc9516fa7c9cddd0\nCSI_LIB=C:\Libraries\win\nbamboo_planRepository_1_username=csibuilder\nbamboo_planRepository_type=git\nbamboo_ManualBuildTriggerReason_userName=shruthi.dn\nbamboo_repository_git_repositoryUrl=git@github.com:calgaryscientific/unreal.git\nbamboo_capability_system_builder_msbuild_MSBuild_v4_0__64bit_=C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe\nbamboo_capability_ProjectsDir=F:\Projects\nbamboo_working_directory=C:\bamboo-agent-home\xml-data\build-dir\PUR-ULPBP-JOB1\nbamboo_planKey=PUR-ULPBP\nbamboo_planRepository_1_repositoryUrl=git@github.com:calgaryscientific/unreal.git\nbamboo_planRepository_username=csibuilder\nbamboo_capability_system_jdk_JDK_1_8=C:\Program Files\Java\jre1.8.0_201\nbamboo_capability_LINUX_MULTIARCH_DIR=F:\UnrealToolchains\nbamboo_capability_UNREALSDK_LINUX=F:\UnrealEngines\nbamboo_repository_236617755_git_repositoryUrl=git@github.com:calgaryscientific/unreal.git\nbamboo_planRepository_1_branchName=master\n
+build	13-Feb-2020 15:09:35	Sourcing vs2017 environment variables
+build	13-Feb-2020 15:09:35	**********************************************************************
+build	13-Feb-2020 15:09:35	** Visual Studio 2017 Developer Command Prompt v15.9.11
+build	13-Feb-2020 15:09:35	** Copyright (c) 2017 Microsoft Corporation
+build	13-Feb-2020 15:09:35	**********************************************************************
+build	13-Feb-2020 15:09:36	[vcvarsall.bat] Environment initialized for: 'x64'
+build	13-Feb-2020 15:09:36	Building individual Linux services
+error	13-Feb-2020 15:09:36	cd C:\pwr_prj/rotor_home && git pull
+error	13-Feb-2020 15:09:39	From https://github.com/calgaryscientific/pwr_rotor_home
+error	13-Feb-2020 15:09:39	   bf091e0..75726cc  master     -> origin/master
+error	13-Feb-2020 15:09:39	   22ffa18..ff615b0  PWR-554    -> origin/PWR-554
+error	13-Feb-2020 15:09:39	error: Unable to create 'C:/pwr_prj/rotor_home/.git/index.lock': File exists.
+build	13-Feb-2020 15:09:39	Updating bf091e0..75726cc
+error	13-Feb-2020 15:09:39	
+error	13-Feb-2020 15:09:39	Another git process seems to be running in this repository, e.g.
+error	13-Feb-2020 15:09:39	an editor opened by 'git commit'. Please make sure all processes
+error	13-Feb-2020 15:09:39	are terminated then try again. If it still fails, a git process
+error	13-Feb-2020 15:09:39	may have crashed in this repository earlier:
+error	13-Feb-2020 15:09:39	remove the file manually to continue.
+error	13-Feb-2020 15:09:39	rake aborted!
+error	13-Feb-2020 15:09:39	Command failed with status (1): [cd C:\pwr_prj/rotor_home && git pull...]
+error	13-Feb-2020 15:09:39	C:/bamboo-agent-home/xml-data/build-dir/PUR-ULPBP-JOB1/Rakefile:148:in `updateGitProject'
+error	13-Feb-2020 15:09:39	C:/bamboo-agent-home/xml-data/build-dir/PUR-ULPBP-JOB1/Rakefile:142:in `getGitProject'
+error	13-Feb-2020 15:09:39	C:/bamboo-agent-home/xml-data/build-dir/PUR-ULPBP-JOB1/Rakefile:544:in `block (2 levels) in <top (required)>'
+error	13-Feb-2020 15:09:39	C:/bamboo-agent-home/xml-data/build-dir/PUR-ULPBP-JOB1/Rakefile:543:in `each'
+error	13-Feb-2020 15:09:39	C:/bamboo-agent-home/xml-data/build-dir/PUR-ULPBP-JOB1/Rakefile:543:in `block in <top (required)>'
+error	13-Feb-2020 15:09:39	Tasks: TOP => build_linux_services => init_linux
+error	13-Feb-2020 15:09:39	(See full trace by running task with --trace)
+build	13-Feb-2020 15:09:39	Project directory environment variable found: C:\pwr_prj
+build	13-Feb-2020 15:09:39	Carrying on
+build	13-Feb-2020 15:09:39	The PROJECTS folder for this build is C:\pwr_prj
+build	13-Feb-2020 15:09:39	rake:init_linux
+build	13-Feb-2020 15:09:39	
+build	13-Feb-2020 15:09:39	Unreal ♥ PureWeb Linux cross-compile
+build	13-Feb-2020 15:09:39	[✓] Using project root: C:/bamboo-agent-home/xml-data/build-dir/PUR-ULPBP-JOB1
+build	13-Feb-2020 15:09:39	[✓] Using UNREAL Cross-Compile SDK: F:\UnrealEngines
+build	13-Feb-2020 15:09:39	rotor_home directory exists.
+build	13-Feb-2020 15:09:39	Pulling from remote rotor_home repository
+simple	13-Feb-2020 15:09:39	Failing task since return code of [BambooBuild-Linux.bat] was 1 while expected 0
+simple	13-Feb-2020 15:09:39	Finished task 'Build unreal' with result: Failed
+simple	13-Feb-2020 15:09:39	Running post build plugin 'NCover Results Collector'
+simple	13-Feb-2020 15:09:39	Running post build plugin 'Clover Results Collector'
+simple	13-Feb-2020 15:09:39	Running post build plugin 'npm Cache Cleanup'
+simple	13-Feb-2020 15:09:39	Running post build plugin 'Artifact Copier'
+simple	13-Feb-2020 15:09:39	Finalising the build...
+simple	13-Feb-2020 15:09:39	Stopping timer.
+simple	13-Feb-2020 15:09:39	Build PUR-ULPBP-JOB1-219 completed.
+simple	13-Feb-2020 15:06:48	Running on server: post build plugin 'Clover Delta Calculator'
+simple	13-Feb-2020 15:06:48	Running on server: post build plugin 'Build Hanging Detection Configuration'
+simple	13-Feb-2020 15:06:48	Running on server: post build plugin 'NCover Results Collector'
+simple	13-Feb-2020 15:06:48	Running on server: post build plugin 'Maven Dependencies Postprocessor'
+simple	13-Feb-2020 15:06:48	All post build plugins have finished
+simple	13-Feb-2020 15:06:49	Generating build results summary...
+simple	13-Feb-2020 15:06:49	Saving build results to disk...
+simple	13-Feb-2020 15:06:49	Indexing build results...
+simple	13-Feb-2020 15:06:49	Finished building PUR-ULPBP-JOB1-219.
